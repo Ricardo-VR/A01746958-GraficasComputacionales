@@ -1,0 +1,30 @@
+<!Doctype html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Paint</title>
+        <script src="paint.js"></script>
+    </head>
+
+    <body onload="main();">
+        <div>
+            <div class="slidecontainer" style= "width: 160px; float: left; display: block;">
+                <input type="range" min="5" max="10" value="5" class="slider" id="inptWidth" onchange="updateText(this.value)">
+                <label id="lblWidth">Line Width: 5</label>
+                <input type="button" value="CLEAR" onclick="clearCanvas()">
+                <div>
+                    <div style="height: 15px; width: 15px; padding: 2px; background: black;" onclick="changeColor('black')"></div>
+                    <div style="height: 15px; width: 15px; padding: 2px; background: #000099;" onclick="changeColor('#000099')"></div>
+                    <div style="height: 15px; width: 15px; padding: 2px; background: #f80f07;" onclick="changeColor('#f80f07')"></div>
+                    <div style="height: 15px; width: 15px; padding: 2px; background: #0bdb04;" onclick="changeColor('#0bdb04')"></div>
+                </div>
+            </div>
+            <div style="float: left;">
+                <canvas id="paintCanvas" width="600" height="300" style="background: white;">
+                </canvas>
+            </div>
+        </div>
+    </body>
+</html>

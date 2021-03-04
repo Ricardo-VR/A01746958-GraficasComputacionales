@@ -1,0 +1,18 @@
+<!Doctype html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Triangulo</title>
+        <script src="triangulo.js"></script>
+    </head>
+    <body onload="main();">
+        <div class="slidecontainer">
+            <input type="range" min="0" max="12" value="1" class="slider" id="sierpDepth" onchange="changeDepth()">
+            <label id="lblWidth"></label>
+        </div>
+        <canvas id="triCanvas" width="600" height="300" style="background: black;"> 
+        </canvas>
+    </body>
+</html>
