@@ -363,7 +363,7 @@ function createOcta(gl, translation, rotationAxis)
     mat4.translate(octa.modelViewMatrix, octa.modelViewMatrix, translation);
     mat4.scale(octa.modelViewMatrix, octa.modelViewMatrix, [0.66, 0.66, 0.66])
 
-    let stepMovement = 0.009;
+    let stepMovement = 0.05;
 
     octa.update = function()
     {
@@ -380,10 +380,10 @@ function createOcta(gl, translation, rotationAxis)
         // Number rad the angle to rotate the matrix by
         // vec3 axis the axis to rotate around
         mat4.rotate(this.modelViewMatrix, this.modelViewMatrix, angle, rotationAxis);
-        if(this.modelViewMatrix[13] >= 1.6 || this.modelViewMatrix[13] <= -1.6){
+       
+        if(this.modelViewMatrix[13] >= 1.75 || this.modelViewMatrix[13] <= -1.75){
             stepMovement = -1 * stepMovement;
         }
-
         mat4.translate(this.modelViewMatrix, this.modelViewMatrix, [0, stepMovement, 0]);
     };
     
