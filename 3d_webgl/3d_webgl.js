@@ -46,8 +46,8 @@ function main()
     initGL(canvas);
     
     let octa = createOcta(gl, [2.5 , 0, -2], [0, 1, 0]);
-    let dodeca = createDodeca(gl, [-2.5, 0, -2], [-0.4, 1, 0.1], [0.0, 1.0, 0.0]);
-    let scutoid = createScutoid(gl, [0, 0, 0], [1, 1, 0.2]);
+    let dodeca = createDodeca(gl, [0, 0, -2], [-0.4, 1, 0.1], [0.0, 1.0, 0.0]);
+    let scutoid = createScutoid(gl, [-2.5, 0, -2], [1, 1, 0.2]);
     
     initShader(gl);
     
