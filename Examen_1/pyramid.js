@@ -201,7 +201,6 @@ function arrTrianglesToarrVerts(arrTriangles){
     return arrVerts;
 }
 
-
 function createPyramid(gl, translation, rotationAxis) 
 {
     let vertexBuffer;
