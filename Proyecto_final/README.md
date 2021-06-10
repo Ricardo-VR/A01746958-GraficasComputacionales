@@ -67,3 +67,15 @@ https://www.youtube.com/watch?v=a7Gj9w70bPA
 
 Buscar modelos 3D para importarlos a las escenas.
 Wireframes para diseño de la página para los menús.
+
+Animaciones de todas la figuras.
+Agregar objetos desde la interfaz.
+*DragControl Three.js
+Materiales para las escenas.
+*Como agregar un Skybox en Three.js
+
+Orbicontroller Revisar documentacion para evitar que se actualice cuando drag
+Agregar objetos a las escenas.
+Animar las figuras.
+Cambios escena con los tipos de luz.
+Agregar las opciones de la interfaz.

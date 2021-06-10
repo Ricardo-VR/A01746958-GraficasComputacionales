@@ -1,0 +1,16 @@
+{
+  "name": "proyecto_final",
+  "version": "1.0.0",
+  "description": "Final proyect for the Computer Graphics course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ricardo Velazquez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "three": "^0.128.0"
+  },
+  "type": "module"
+}

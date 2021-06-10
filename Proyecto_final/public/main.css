@@ -1,0 +1,24 @@
+#container {
+	position:absolute;
+}
+
+#char_menu {
+	position:absolute;
+	left:20px;
+	top:20px;
+	height: 100px;
+}
+
+#skybox_menu {
+	position:absolute;
+	left:20px;
+	top:20px;
+	height: 100px; 
+	left: 1500px
+}
+
+.char_button{
+    height: 100px;
+    width: 100px;
+}
+

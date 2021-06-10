@@ -1,12 +1,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Three.js Animations</title>
+        <title>Proyecto Final</title>
 
-        <script type="module" src="/public/scene.js">
-
-        </script>
-
+        <script type="module" src="./public/scene.js"></script>
         <style>
             body {
             width: 100vw;
@@ -16,8 +13,24 @@
             overflow: hidden; 
             }
         </style>
+
+        <link rel="stylesheet" href="./public/main.css" />
     </head>
+
     <body>
-        <canvas id="webglcanvas"></canvas>
+        <div id="container">
+            <canvas id="webglcanvas"></canvas>
+            <div id="char_menu">
+                <img id="char_0" class="char_button" src="./public/assets/Buttons/warrior.JPG">
+                <img id="char_1" class="char_button" src="./public/assets/Buttons/soldier.JPG">
+                <img id="char_2" class="char_button" src="./public/assets/Buttons/archer.JPG">
+                <img id="char_3" class="char_button" src="./public/assets/Buttons/mutant.JPG">
+            </div>
+            <div id="skybox_menu">
+                <img id="skybox_0" class="char_button" src="./public/assets/Skybox/flame/flame_bk.jpg">
+                <img id="skybox_1" class="char_button" src="./public/assets/Skybox/coulee/coulee_bk.jpg">
+                <img id="skybox_2" class="char_button" src="./public/assets/Skybox/forestrytwo/forestrytwo_bk.jpg">
+            </div>
+        </div>
     </body>
 </html>
