@@ -3,7 +3,6 @@ import { FBXLoader } from './three/examples/jsm/loaders/FBXLoader.js'
 import { OrbitControls } from './three/examples/jsm/controls/OrbitControls.js';
 import { DragControls } from './three/examples/jsm/controls/DragControls.js';
 
-
 let renderer = null, scene = null, camera = null, root = null, group = null, orbitControls = null, dragControls = null, 
 skyboxGeo = null, skybox = null;
 
@@ -24,7 +23,8 @@ let enableSelection = false;
 
 let SHADOW_MAP_WIDTH = 2048, SHADOW_MAP_HEIGHT = 2048;
 
-let modelUrls = ["./public/assets/fwarrior_defeated.fbx", "./public/assets/soldier_taunt.fbx", "./public/assets/erika_archer.fbx", "./public/assets/mutant_walking.fbx"];
+let modelUrls = ["./public/assets/fwarrior_defeated.fbx", "./public/assets/soldier_taunt.fbx", "./public/assets/erika_archer.fbx", 
+                "./public/assets/mutant_walking.fbx"];
 let archerAnimations = ["./public/assets/standing idle 01"];
 
 
@@ -90,18 +90,18 @@ function animate(){
 
         let worldPosition = object.getWorldPosition();
 
-        if(worldPosition.z >= 60){
+        if(worldPosition.z >= 100){
             mutantsDirect[index] = -1;
 
             object.rotateY(Math.PI)
         }
-        else if(worldPosition.z <= -60){
+        else if(worldPosition.z <= -100){
             mutantsDirect[index] = 1
 
             object.rotateY(Math.PI)
         }
 
-        object.position.z += mutantsDirect[index] * 0.01 * deltat;
+        object.position.z += mutantsDirect[index] * 0.02 * deltat;
 
         object.animations[0].getMixer().update(deltat * 0.001);
     });
@@ -336,7 +336,7 @@ function changeSkybox(skyboxId){
     spotLight.castShadow = true;
 
     spotLight.shadow.camera.near = 1;
-    spotLight.shadow. camera.far = 200;
+    spotLight.shadow. camera.far = 300;
     spotLight.shadow.camera.fov = 45;
     
     spotLight.shadow.mapSize.width = SHADOW_MAP_WIDTH;
@@ -403,7 +403,7 @@ function createScene(canvas)
     spotLight.castShadow = true;
 
     spotLight.shadow.camera.near = 1;
-    spotLight.shadow. camera.far = 200;
+    spotLight.shadow. camera.far = 300;
     spotLight.shadow.camera.fov = 45;
     
     spotLight.shadow.mapSize.width = SHADOW_MAP_WIDTH;
